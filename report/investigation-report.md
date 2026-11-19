@@ -318,38 +318,51 @@ The command lines establish that these enumeration operations were launched. The
 
 ### 5.8 Guest Account Manipulation
 
-**Time: 14:14:34–14:14:54 UTC**
+**Time: 14:14:13–14:14:54 UTC**
 
-The investigation identified commands targeting the built-in Guest account.
+The investigation identified three commands targeting the built-in Windows Guest account. The commands were launched through `net.exe` and shared the same parent PowerShell process (PID `2980`), running as `ATOMIC\Administrator` with High integrity.
 
-One command attempted to change its password:
+**1. Guest account activation — 14:14:13.958 UTC**
 
-`net user guest I_AM_M0N1T0R1NG`
+The first command attempted to enable the Guest account:
+
+```cmd
+net.exe user guest /active:yes
+```
+
+**Evidence — `5.1.png`**
+
+![Guest account activation](https://github.com/user-attachments/assets/89721947-06a8-4099-8f84-0c8f41b67935)
+
+**2. Guest account password modification — 14:14:35.717 UTC**
+
+A subsequent command attempted to change the Guest account password:
+
+```cmd
+net.exe user guest I_AM_M0N1T0R1NG
+```
+
+**Evidence — `5.2.png`**
+
+![Guest account password modification](https://github.com/user-attachments/assets/677ff4bc-f9eb-482c-9942-3a6248661b10)
+
+**3. Guest account added to the Administrators group — 14:14:54.452 UTC**
+
+The final command attempted to add the Guest account to the local Administrators group:
+
+```cmd
+net.exe localgroup Administrators guest /add
+```
 
 **Evidence — `5.3.png`**
 
-![Guest account password change](https://github.com/user-attachments/assets/844a694c-6554-40e6-ac44-ac18356a4e79)
+![Guest account added to Administrators group](https://github.com/user-attachments/assets/844a694c-6554-40e6-ac44-ac18356a4e79)
 
-A subsequent command attempted to add Guest to the local Administrators group:
+**Assessment**
 
-`net localgroup Administrators guest /add`
+The sequence shows an attempt to enable the built-in Guest account, change its password, and grant it local administrator privileges. Taken together, these actions are consistent with account manipulation and attempted privilege escalation.
 
-This operation was executed through `net.exe` (PID `2348`).
-
-**Evidence — `5.4.png`**
-
-<!-- Add the GitHub image URL for 5.4.png here when uploaded. -->
-
-The investigation also identified a separate command attempting to enable the Guest account.
-
-Taken together, these commands indicate attempts to modify the built-in account, change its credentials, and grant it administrative group membership.
-
-These actions are consistent with account manipulation and attempted privilege escalation.
-
-The process creation events establish that the commands were launched; they do not independently establish that the account modifications succeeded.
-
-**Assessment:** The Guest account commands represent a significant attempt to alter local account security and potentially establish additional access.
-
+The process creation events confirm that all three commands were launched. They do not independently confirm that the account was successfully enabled, its password changed, or its group membership modified.
 ### 5.9 Pass-the-Hash Activity
 
 **Time: 14:21:41 UTC**
