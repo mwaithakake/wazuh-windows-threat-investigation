@@ -40,7 +40,7 @@ Through Wazuh and Sysmon telemetry, I:
 
 | Directory / File | Description |
 |---|---|
-| `evidence/` | Screenshots of relevant Wazuh alerts and event details |
+| `evidence.md` | Screenshots of relevant Wazuh alerts and event details |
 | `report/investigation-report.md` | Detailed investigation timeline, technical analysis, findings, and conclusion |
 
 ## Investigation Scope
