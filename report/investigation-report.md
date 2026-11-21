@@ -234,7 +234,8 @@ The file was intended to be saved in the current user's temporary directory.
 
 **Evidence — `8.2.png`**
 
-![Phishing attachment retrieval attempt](https://github.com/user-attachments/assets/413ae3b6-9bc1-4d88-83ee-c31188e1bb4a)
+<img width="1426" height="467" alt="8 2" src="https://github.com/user-attachments/assets/b1695833-64e3-45ef-b8a0-bf8059493d22" />
+
 
 The filename and `.xlsm` extension indicate that the requested file was a macro-enabled Excel document.
 
