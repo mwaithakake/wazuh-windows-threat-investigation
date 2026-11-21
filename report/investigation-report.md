@@ -108,7 +108,7 @@ The compiler process was associated with the original PowerShell process (PID `2
 
 **Evidence:**
 
-![Initial PowerShell execution](https://github.com/user-attachments/assets/b26e56bd-bf64-472c-8e37-8adcf947e7a5)
+<img width="1501" height="468" alt="1 2" src="https://github.com/user-attachments/assets/c02b142c-45af-4027-b076-569ac9144f12" />
 
 This sequence establishes PowerShell execution with policy bypass, temporary file creation, and subsequent compiler activity. The telemetry supports the conclusion that code compilation or processing was initiated, although it does not independently establish whether the resulting DLL was successfully loaded or what functionality it performed.
 
