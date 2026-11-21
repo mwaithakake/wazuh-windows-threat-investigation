@@ -301,7 +301,7 @@ The observed commands included:
 
 **Evidence — `5.2.png`**
 
-![Local account and system reconnaissance](https://github.com/user-attachments/assets/677ff4bc-f9eb-482c-9942-3a6248661b10)
+<img width="1369" height="723" alt="5 1" src="https://github.com/user-attachments/assets/89721947-06a8-4099-8f84-0c8f41b67935" />
 
 These commands were intended to gather information about local accounts, group memberships, user directories, and stored credential targets.
 
