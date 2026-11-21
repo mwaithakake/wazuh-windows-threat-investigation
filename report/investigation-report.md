@@ -93,9 +93,9 @@ The process was identified as PID `2980`, with parent PID `6232`.
 
 This PowerShell session became an important reference point during the investigation because several subsequent processes were launched beneath it.
 
-**Evidence — `1.2.png`**
+**Evidence:**
 
-![Initial PowerShell execution](https://github.com/user-attachments/assets/b26e56bd-bf64-472c-8e37-8adcf947e7a5)
+<img width="919" height="425" alt="1 1" src="https://github.com/user-attachments/assets/26e2fab8-639a-4c8c-a9e5-ef1583c912a3" />
 
 The same PowerShell process subsequently created two files in a temporary directory:
 
@@ -106,9 +106,9 @@ Shortly afterwards, the Windows .NET C# compiler, `csc.exe`, was launched using 
 
 The compiler process was associated with the original PowerShell process (PID `2980`).
 
-**Evidence — `1.3.png`**
+**Evidence:**
 
-![C Sharp compiler activity](https://github.com/user-attachments/assets/35cfb406-2231-4e99-a915-585026574125)
+![Initial PowerShell execution](https://github.com/user-attachments/assets/b26e56bd-bf64-472c-8e37-8adcf947e7a5)
 
 This sequence establishes PowerShell execution with policy bypass, temporary file creation, and subsequent compiler activity. The telemetry supports the conclusion that code compilation or processing was initiated, although it does not independently establish whether the resulting DLL was successfully loaded or what functionality it performed.
 
