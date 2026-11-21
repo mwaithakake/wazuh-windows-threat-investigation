@@ -435,6 +435,9 @@ The request included content containing sensitive-labeled strings, simulated sec
 
 ![Pastebin data submission attempt](https://github.com/user-attachments/assets/d6805f05-8e4d-4fbd-afff-019863beed50)
 
+<img width="1788" height="97" alt="9 2" src="https://github.com/user-attachments/assets/175a2cd3-e2c9-4a76-a475-52f6252478f0" />
+
+
 The use of an HTTP POST request to a text-sharing service is consistent with an attempted data exfiltration operation.
 
 Relevant MITRE ATT&CK technique:
