@@ -143,7 +143,7 @@ Another command attempted to check the availability of Pypykatz by invoking its 
 
 `pypykatz -h`
 
-**Evidence — `2.3.png`**
+**Evidence:**
 
 ![Pypykatz availability check](https://github.com/user-attachments/assets/972feef2-3da2-46cd-9850-4a407bc4fbaa)
 
