@@ -171,9 +171,10 @@ The executable was located in the Atomic Red Team directory associated with the 
 
 The process was launched under the Administrator account with High integrity.
 
-**Evidence — `4.1.png`**
+**Evidence — `3.1.png`**
 
-![LSASS credential extraction attempt](https://github.com/user-attachments/assets/5ff77f62-57b9-49c6-bf1d-d1f314c9b43c)
+<img width="1509" height="498" alt="3 1" src="https://github.com/user-attachments/assets/73d9efd5-d5f4-45ec-802b-e51c6d9f5334" />
+
 
 The command indicates an attempt to load an LSASS dump file and extract logon credential information using Mimikatz functionality.
 
