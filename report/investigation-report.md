@@ -129,13 +129,13 @@ The investigation identified checks involving:
 
 These checks indicate that the environment was being examined for utilities and files associated with credential extraction.
 
-**Evidence — `2.1.png`**
+**Evidence:**
 
 ![Credential tool discovery evidence](https://github.com/user-attachments/assets/fdaea4db-7c0c-424a-a374-43aabbab9071)
 
 A separate command checked whether `lsass.DMP` existed in the temporary directory.
 
-**Evidence — `2.2.png`**
+**Evidence:**
 
 ![LSASS dump file check](https://github.com/user-attachments/assets/9abdbab2-8d87-4913-9c6a-6936537e46a7)
 
@@ -171,7 +171,7 @@ The executable was located in the Atomic Red Team directory associated with the 
 
 The process was launched under the Administrator account with High integrity.
 
-**Evidence — `3.1.png`**
+**Evidence:**
 
 <img width="1509" height="498" alt="3 1" src="https://github.com/user-attachments/assets/73d9efd5-d5f4-45ec-802b-e51c6d9f5334" />
 
@@ -206,7 +206,7 @@ The event contained the following details:
 | Authentication Package | NTLM |
 | Authentication Variant | NTLMv2 |
 
-**Evidence — `8.1.png`**
+**Evidence:**
 
 <img width="781" height="528" alt="8 1" src="https://github.com/user-attachments/assets/bcef0d36-5660-460b-b690-2932cbc8fa99" />
 
@@ -232,7 +232,7 @@ The specified output filename was:
 
 The file was intended to be saved in the current user's temporary directory.
 
-**Evidence — `8.2.png`**
+**Evidence:**
 
 <img width="1426" height="467" alt="8 2" src="https://github.com/user-attachments/assets/b1695833-64e3-45ef-b8a0-bf8059493d22" />
 
@@ -271,7 +271,7 @@ The encoded content in the observed command decodes to:
 
 `ping www.youarevulnerable.thm`
 
-**Evidence — `6.1.png`**
+**Evidence:**
 
 <img width="1803" height="295" alt="6 1" src="https://github.com/user-attachments/assets/e32cd48f-99dc-4ecc-96ad-6f95694e1fef" />
 
@@ -301,7 +301,7 @@ The observed commands included:
 - `cmdkey.exe /list`
 - Directory enumeration under `C:\Users`
 
-**Evidence — `4.1.png`**
+**Evidence:**
 
 <img width="1622" height="405" alt="4 1" src="https://github.com/user-attachments/assets/bbf4b7a3-9d69-4f3e-86fb-c5c0027f9257" />
 
@@ -332,7 +332,7 @@ The first command attempted to enable the Guest account:
 net.exe user guest /active:yes
 ```
 
-**Evidence — `5.1.png`**
+**Evidence:**
 
 <img width="1367" height="220" alt="5 1" src="https://github.com/user-attachments/assets/f1ac5104-577e-406d-8082-b7c7c6a9c096" />
 
@@ -345,7 +345,7 @@ A subsequent command attempted to change the Guest account password:
 net.exe user guest I_AM_M0N1T0R1NG
 ```
 
-**Evidence — `5.2.png`**
+**Evidence:**
 
 <img width="1366" height="220" alt="5 2" src="https://github.com/user-attachments/assets/be6ffb57-b30f-4e73-8993-a4dea1d781f3" />
 
@@ -357,7 +357,7 @@ The final command attempted to add the Guest account to the local Administrators
 net.exe localgroup Administrators guest /add
 ```
 
-**Evidence — `5.3.png`**
+**Evidence:**
 
 <img width="1367" height="218" alt="5 3" src="https://github.com/user-attachments/assets/f9b60038-9efa-4e05-883e-d7e0455c79b1" />
 
@@ -386,7 +386,7 @@ It targeted the account:
 
 The command also supplied an NTLM hash and specified the domain through the `%userdnsdomain%` environment variable.
 
-**Evidence — `7.1.png`**
+**Evidence:**
 
 <img width="1638" height="403" alt="7 1" src="https://github.com/user-attachments/assets/b7bd78f6-dc55-4669-9e33-74ccac46a1cf" />
 
@@ -396,7 +396,7 @@ The activity corresponds to:
 
 A subsequent Sysmon process creation event showed that the Mimikatz process (PID `4800`) spawned a child `cmd.exe` process (PID `3104`).
 
-**Evidence — `7.2.png`**
+**Evidence:**
 
 <img width="1535" height="375" alt="7 2" src="https://github.com/user-attachments/assets/1c9b21c9-9244-4d07-b69d-2c309fd4b095" />
 
@@ -431,7 +431,7 @@ The destination was:
 
 The request included content containing sensitive-labeled strings, simulated secrets, API keys, passwords, and a flag value.
 
-**Evidence — `9.1.png`**
+**Evidence:**
 
 ![Pastebin data submission attempt](https://github.com/user-attachments/assets/d6805f05-8e4d-4fbd-afff-019863beed50)
 
