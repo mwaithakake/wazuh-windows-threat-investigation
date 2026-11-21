@@ -208,7 +208,7 @@ The event contained the following details:
 
 **Evidence — `8.1.png`**
 
-![John Sterling network logon](https://github.com/user-attachments/assets/84efee39-9aed-4c2e-8996-9242be30f77c)
+<img width="781" height="528" alt="8 1" src="https://github.com/user-attachments/assets/bcef0d36-5660-460b-b690-2932cbc8fa99" />
 
 This event establishes a successful network logon for the account from the identified source workstation.
 
