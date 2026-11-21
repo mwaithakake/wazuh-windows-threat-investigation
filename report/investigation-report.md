@@ -334,7 +334,8 @@ net.exe user guest /active:yes
 
 **Evidence — `5.1.png`**
 
-![Guest account activation](https://github.com/user-attachments/assets/89721947-06a8-4099-8f84-0c8f41b67935)
+<img width="1367" height="220" alt="5 1" src="https://github.com/user-attachments/assets/f1ac5104-577e-406d-8082-b7c7c6a9c096" />
+
 
 **2. Guest account password modification — 14:14:35.717 UTC**
 
@@ -346,7 +347,7 @@ net.exe user guest I_AM_M0N1T0R1NG
 
 **Evidence — `5.2.png`**
 
-![Guest account password modification](https://github.com/user-attachments/assets/677ff4bc-f9eb-482c-9942-3a6248661b10)
+<img width="1366" height="220" alt="5 2" src="https://github.com/user-attachments/assets/be6ffb57-b30f-4e73-8993-a4dea1d781f3" />
 
 **3. Guest account added to the Administrators group — 14:14:54.452 UTC**
 
@@ -358,7 +359,7 @@ net.exe localgroup Administrators guest /add
 
 **Evidence — `5.3.png`**
 
-![Guest account added to Administrators group](https://github.com/user-attachments/assets/844a694c-6554-40e6-ac44-ac18356a4e79)
+<img width="1367" height="218" alt="5 3" src="https://github.com/user-attachments/assets/f9b60038-9efa-4e05-883e-d7e0455c79b1" />
 
 **Assessment**
 
@@ -387,7 +388,7 @@ The command also supplied an NTLM hash and specified the domain through the `%us
 
 **Evidence — `7.1.png`**
 
-![Mimikatz Pass-the-Hash invocation](https://github.com/user-attachments/assets/b7001ecd-9fc4-471e-b8ac-e0f799bf4761)
+<img width="1638" height="403" alt="7 1" src="https://github.com/user-attachments/assets/b7bd78f6-dc55-4669-9e33-74ccac46a1cf" />
 
 The activity corresponds to:
 
@@ -397,7 +398,7 @@ A subsequent Sysmon process creation event showed that the Mimikatz process (PID
 
 **Evidence — `7.2.png`**
 
-![Pass-the-Hash child process](https://github.com/user-attachments/assets/bec2c4a7-9619-4fce-890d-c613a86ac142)
+<img width="1535" height="375" alt="7 2" src="https://github.com/user-attachments/assets/1c9b21c9-9244-4d07-b69d-2c309fd4b095" />
 
 The parent-child relationship provides additional context for the execution chain:
 
