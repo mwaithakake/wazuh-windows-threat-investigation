@@ -301,7 +301,7 @@ The observed commands included:
 
 **Evidence — `5.2.png`**
 
-<img width="1369" height="723" alt="5 1" src="https://github.com/user-attachments/assets/89721947-06a8-4099-8f84-0c8f41b67935" />
+<img width="1625" height="721" alt="4 1" src="https://github.com/user-attachments/assets/5ff77f62-57b9-49c6-bf1d-d1f314c9b43c" />
 
 These commands were intended to gather information about local accounts, group memberships, user directories, and stored credential targets.
 
