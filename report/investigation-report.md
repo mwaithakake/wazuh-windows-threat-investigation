@@ -273,7 +273,7 @@ The encoded content in the observed command decodes to:
 
 **Evidence — `6.1.png`**
 
-![Registry and scheduled task persistence attempt](https://github.com/user-attachments/assets/9f548d27-daad-49e2-9ad0-85785511275f)
+<img width="1803" height="295" alt="6 1" src="https://github.com/user-attachments/assets/e32cd48f-99dc-4ecc-96ad-6f95694e1fef" />
 
 The scheduled task behavior is relevant to:
 
@@ -301,9 +301,9 @@ The observed commands included:
 - `cmdkey.exe /list`
 - Directory enumeration under `C:\Users`
 
-**Evidence — `5.2.png`**
+**Evidence — `4.1.png`**
 
-<img width="1625" height="721" alt="4 1" src="https://github.com/user-attachments/assets/5ff77f62-57b9-49c6-bf1d-d1f314c9b43c" />
+<img width="1622" height="405" alt="4 1" src="https://github.com/user-attachments/assets/bbf4b7a3-9d69-4f3e-86fb-c5c0027f9257" />
 
 These commands were intended to gather information about local accounts, group memberships, user directories, and stored credential targets.
 
